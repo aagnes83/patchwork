@@ -16,13 +16,16 @@ a te feladatod, hogy megadd a függvény paramétereket
 
 function censor(text, originalWord, newWord) {
     let splittedText = text.split(' ');
-    for (let i = 0; i < splittedText.length; i++) {
-        if (splittedText[i] === originalWord) {
-            splittedText[i] = newWord;
+    splittedText = splittedText.map(word => {
+        if (word === originalWord) { 
+            return newWord;
         }
-        return splittedText.join(' ');
-    }
+        return word;
+    });
+    return splittedText.join(' ');
 }
+
+console.log(censor("A kedvenc gyümölcsöm a(z) alma alma", "alma", "banán"));
 
 // ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ INNEN FELFELE LÉVŐ DOLGOKAT SZERKESZTHETED ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 // ------ EZT A SORT ÉS AMI EZ ALATT VAN AZT NE TÖRÖLD, NE MÓDOSÍTSD, EZ ALÁ A SOR ALÁ NE ÍRJ SEMMIT,

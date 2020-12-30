@@ -19,8 +19,6 @@ function grammarCheck(text) {
     return text.includes(text.match(/. [A-Z]+/g));
 }
 
-console.log(grammarCheck('Magni quis in dolorem libero voluptates numquam autem consectetur. Iusto autem ipsum aut rerum assumenda numquam omnis. Beatae voluptatem doloremque voluptatem id cumque qui. ipsa et unde et dolorem eum doloribus inventore dicta. optio amet nam voluptas voluptatum. tenetur laudantium asperiores. et cum labore sit et nesciunt veniam. ullam officiis voluptatibus eum. quod earum optio. qui ut commodi rem tempore.'));
-
 // ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ INNEN FELFELE LÉVŐ DOLGOKAT SZERKESZTHETED ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 // ------ EZT A SORT ÉS AMI EZ ALATT VAN AZT NE TÖRÖLD, NE MÓDOSÍTSD, EZ ALÁ A SOR ALÁ NE ÍRJ SEMMIT,
 // ------ KÜLÖNBEN NEM FOG MŰKÖDNI AZ ELLENŐRZŐ ÉS AUTOMATIKUSAN 0%-ot fog adni -----------

@@ -16,7 +16,7 @@ a te feladatod, hogy megadd a függvény paramétereket
 */
 
 function grammarCheck(text) {
-    return text.includes(text.match( /.[A-Z]+/g));
+    return text.includes(text.match( /.[A-Z]+/));
 }
 
 // ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ INNEN FELFELE LÉVŐ DOLGOKAT SZERKESZTHETED ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑

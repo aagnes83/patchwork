@@ -19,8 +19,8 @@ function censor(text, originalWord, newWord) {
     for (let i = 0; i < splittedText.length; i++) {
         if (splittedText[i] === originalWord) {
             splittedText[i] = newWord;
-            return splittedText.join(' ');
         }
+        return splittedText.join(' ');
     }
 }
 

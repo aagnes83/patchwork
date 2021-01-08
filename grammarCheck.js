@@ -16,7 +16,7 @@ a te feladatod, hogy megadd a függvény paramétereket
 */
 
 function grammarCheck(text) {
-  // return text.includes(text.match(/. [A-Z]+/));
+  //  return text.includes(text.match(/. [A-Z]+/));
   //    return text.includes(text.match(/. [A-Z]+/g));
 
   /*  let isCapitalLetter = true;
@@ -28,7 +28,8 @@ function grammarCheck(text) {
     );
     isCapitalLetter = false;
   }
-  return isCapitalLetter;*/
+  return isCapitalLetter;
+}*/
 
   let isPerfect = true;
   let textWoSpaces = text.split(" ").join("");
@@ -36,10 +37,11 @@ function grammarCheck(text) {
   sentences.shift();
   for (let i = 0; i < sentences.length; i++) {
     if (
-      !sentences[i] !== "" &&
+      sentences[i] !== "" &&
       sentences[i][0] === sentences[i][0].toLowerCase()
-    );
-    isPerfect = false;
+    ) {
+      isPerfect = false;
+    }
   }
   return isPerfect;
 }

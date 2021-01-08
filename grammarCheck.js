@@ -15,22 +15,30 @@ A függvény paramétereket direkt nem tettük a példakódba,
 a te feladatod, hogy megadd a függvény paramétereket
 */
 
-function grammarCheck(text) {
-  //  return text.includes(text.match(/. [A-Z]+/));
-  //    return text.includes(text.match(/. [A-Z]+/g));
+//function grammarCheck(text) {
+//  return text.includes(text.match(/. [A-Z]+/));
+// }
 
-  /*  let isCapitalLetter = true;
+//function grammarCheck(text) {
+//  return text.includes(text.match(/. [A-Z]+/));
+//}
+
+function grammarCheck(text) {
+  let isCapitalLetter = true;
   let sentences = text.replaceAll(" ", "").split(".");
   for (let i = 1; i < sentences.length; i++) {
     if (
       sentences[i] !== "" &&
       sentences[i][0] === sentences[i][0].toLowerCase()
-    );
-    isCapitalLetter = false;
+    ) {
+      isCapitalLetter = false;
+    }
   }
   return isCapitalLetter;
-}*/
+}
 
+/* Viktor megoldása:
+function grammarCheck(text) {
   let isPerfect = true;
   let textWoSpaces = text.split(" ").join("");
   let sentences = textWoSpaces.split(".");
@@ -44,7 +52,15 @@ function grammarCheck(text) {
     }
   }
   return isPerfect;
-}
+}*/
+
+console.log(grammarCheck("Ez egy jó példa. Ez egy jó példa."));
+console.log(
+  grammarCheck(
+    "ez még mindig egy jó példa. Hiszen a második mondat nagybetűvel kezdődik. itt nincs nagybetű. itt nincs nagybetű."
+  )
+);
+console.log(grammarCheck("Ez egy rossz példa. itt nincs nagybetű."));
 
 // ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ INNEN FELFELE LÉVŐ DOLGOKAT SZERKESZTHETED ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
 // ------ EZT A SORT ÉS AMI EZ ALATT VAN AZT NE TÖRÖLD, NE MÓDOSÍTSD, EZ ALÁ A SOR ALÁ NE ÍRJ SEMMIT,

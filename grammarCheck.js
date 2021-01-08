@@ -16,19 +16,19 @@ a te feladatod, hogy megadd a függvény paramétereket
 */
 
 function grammarCheck(text) {
-  //    return text.includes(text.match(/. [A-Z]+/)); így 1 hiba a teszten
-  //    return text.includes(text.match(/. [A-Z]+/g)); így 3 hiba a teszten
+  return text.includes(text.match(/. [A-Z]+/));
+  //    return text.includes(text.match(/. [A-Z]+/g));
 
-  let isCapitalLetter = true;
+  /*  let isCapitalLetter = true;
   let sentences = text.replaceAll(" ", "").split(".");
   for (let i = 1; i < sentences.length; i++) {
     if (
       sentences[i] !== "" &&
       sentences[i][0] === sentences[i][0].toLowerCase()
     );
-    return (isCapitalLetter = false);
+    isCapitalLetter = false;
   }
-  return isCapitalLetter;
+  return isCapitalLetter;*/
 }
 
 // ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ INNEN FELFELE LÉVŐ DOLGOKAT SZERKESZTHETED ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
